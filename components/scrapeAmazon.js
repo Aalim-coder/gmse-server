@@ -53,19 +53,6 @@ function processData(data) {
     items.push(item);
   });
   items.sort((a, b) => b.combinedParameter - a.combinedParameter);
-
-  fs.writeFile(
-    `${dataDir}DataAmazon.json`,
-    JSON.stringify(items, null, 2),
-    (err) => {
-      if (err) {
-        console.error(err);
-        return [];
-      }
-      console.log("Successfully written data to file");
-    }
-  );
-
   return items;
 }
 

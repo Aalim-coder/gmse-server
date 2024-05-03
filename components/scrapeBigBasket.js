@@ -54,18 +54,6 @@ function processData(data) {
     items.push(item);
   });
 
-  fs.writeFile(
-    `${dataDir}DataBigBasket.json`,
-    JSON.stringify(items, null, 2),
-    (err) => {
-      if (err) {
-        console.error(err);
-        return [];
-      }
-      console.log("Successfully written data to file");
-    }
-  );
-
   return items; 
 }
 
