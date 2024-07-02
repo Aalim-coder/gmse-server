@@ -1,7 +1,3 @@
-Here is a README file for your "Global Mart Search Engine" project:
-
----
-
 # Global Mart Search Engine
 
 A scalable and responsive search engine for an e-commerce platform, designed to improve product discovery by aggregating and sorting product details from multiple websites.
